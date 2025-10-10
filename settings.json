@@ -9,6 +9,7 @@
     "window.zoomLevel": 1.5,
     "code-runner.runInTerminal": true,
     "terminal.integrated.lineHeight": 1.5,
+    "editor.lineNumbers": "off",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.cursorStyle": "line",
     "editor.mouseWheelZoom": true,
@@ -34,29 +35,30 @@
     "window.customTitleBarVisibility": "never",
     "window.menuBarVisibility": "hidden",
     "workbench.activityBar.location": "hidden",
+
     "custom-ui-style.stylesheet": {
         ".notification-toast": "box-shadow: none !important",
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-    ".quick-input-list .scrollbar": "display: none",
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-    ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-scrollable-element > .shadow.top": "display: none",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important",
-    ".monaco-editor .scroll-decoration": "display: none",
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-    ".title .monaco-icon-label:after": "margin-right: 0",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
-    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
-    ".quick-input-widget": "top: 25vh !important",
-    ".monaco-workbench .quick-input-widget:before": "content:''; position:fixed; inset:0; backdrop-filter: blur(8px); pointer-events:none; z-index:-1;",
-    ".monaco-editor .cursors-layer .cursor": "background: linear-gradient(180deg, hotpink 0%, lightpink 100%) !important",
-    // FOR AURA DRACULA SPIRIT (SOFT)- background: linear-gradient(180deg, hotpink 0%, lightpink 100%) !important
-    // TAILWIND THEME - background: linear-gradient(180deg, cyan 0%, #279bd0 100%) !important
-    // FOR OWL DARKER THEME - background: linear-gradient(180deg, #89ddff 0%, #ff79c6 100%) !important
+        ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+        ".quick-input-list .scrollbar": "display: none",
+        ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+        ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+        ".quick-input-titlebar": "background: #100B15 !important",
+        ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+        ".monaco-scrollable-element > .shadow.top": "display: none",
+        ".sidebar .title-label": "padding: 0 !important",
+        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+        ".monaco-list-row.focused": "outline: none !important",
+        ".monaco-editor .scroll-decoration": "display: none",
+        ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+        ".title .monaco-icon-label:after": "margin-right: 0",
+        ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+        ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+        ".quick-input-widget": "top: 25vh !important",
+        ".monaco-workbench .quick-input-widget:before": "content:''; position:fixed; inset:0; backdrop-filter: blur(8px); pointer-events:none; z-index:-1;",
+        ".monaco-editor .cursors-layer .cursor": "background: linear-gradient(180deg, #ffaffc 0%, #DA70D6 100%) !important",
+        // FOR AURA DRACULA SPIRIT (SOFT)- background: linear-gradient(180deg, hotpink 0%, lightpink 100%) !important
+        // TAILWIND THEME - background: linear-gradient(180deg, cyan 0%, #279bd0 100%) !important
+        // FOR OWL DARKER THEME - background: linear-gradient(180deg, #89ddff 0%, #ff79c6 100%) !important
     },
     "custom-ui-style.font.sansSerif": "jetbrains mono",
     "editor.cursorBlinking": "solid",
@@ -146,23 +148,22 @@
             "terminalCursor.foreground": "#82aaff"
         },
         "[Tailwind - Darkest]": {
-            "sideBar.background":"#0D1628",
-            "sideBar.border":"#0D1628",
-            "terminal.background":"#0D1628",
-            "list.hoverBackground":"#0D1628",
-            "list.activeSelectionBackground":"#0D1628",
-            "list.inactiveSelectionBackground":"#0D1628",
-            "editorSuggestWidget.background":"#0D1628",
-            "list.hoverForeground":"#00b3ff",
-            "editorSuggestWidget.selectedBackground":"#0D1628",
-            "editorSuggestWidget.selectedForeground":"#00b3ff",
+            "sideBar.background": "#0D1628",
+            "sideBar.border": "#0D1628",
+            "terminal.background": "#0D1628",
+            "list.hoverBackground": "#0D1628",
+            "list.activeSelectionBackground": "#0D1628",
+            "list.inactiveSelectionBackground": "#0D1628",
+            "editorSuggestWidget.background": "#0D1628",
+            "list.hoverForeground": "#00b3ff",
+            "editorSuggestWidget.selectedBackground": "#0D1628",
+            "editorSuggestWidget.selectedForeground": "#00b3ff",
         }
     },
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.lineHeight": 2.8,
-
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -191,6 +192,7 @@
     "editor.matchBrackets": "never",
     "editor.parameterHints.enabled": false,
     "editor.lightbulb.enabled": "off",
+    "editor.hover.enabled": true,
     "editor.hover.delay": 1500,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -210,11 +212,6 @@
     },
     "editor.colorDecorators": true,
     "editor.multiCursorModifier": "alt",
-    "github.copilot.inlineSuggest.enable": false,
-    "editor.inlineSuggest.enabled": false,
-    "github.copilot.enable": {
-        "*": true
-    },
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.guides.indentation": false,
@@ -298,4 +295,12 @@
         "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "github.copilot.advanced": {
+        "inlineSuggest.enable": true
+    }
 }
