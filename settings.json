@@ -1,20 +1,20 @@
 {
-  "code-runner.runInTerminal": true,
   "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-  "workbench.startupEditor": "none",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "single",
-  "editor.cursorSurroundingLines": 1,
+  "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
-  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.gpuAcceleration": "on",
   "breadcrumbs.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.hidesExplorerArrows": true,
-  "editor.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.indent": 10,
-  "explorer.compactFolders": false,
+  "workbench.tree.indent": 8,
+  "scm.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
@@ -23,34 +23,50 @@
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "hidden",
-  "custom-ui-style.font.sansSerif": "dank mono",
   "custom-ui-style.stylesheet": {
+    /* Notifications and Quick Input */
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
     ".quick-input-widget": "top: 25vh !important",
     ".quick-input-list .scrollbar": "display: none",
     ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
     ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".monaco-workbench .quick-input-widget:before": "content: ''; position: fixed; inset: 0; backdrop-filter: blur(8px); pointer-events: none; z-index: -1;",
+
+    /* Editor Widgets */
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".monaco-editor .scroll-decoration": "display: none",
+
+    // for aura dracula theme
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, hotpink 10%, lightpink 100%)",
+
+    // For Tailwind theme:
+    // ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #6ec1ff 10%, #2196f3 100%)",
+
+    // For nuxt theme
+    // ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #20d199 10%, #009bff 100%)",
+
+    /* Sidebar and Title Bar */
     ".sidebar .title-label": "padding: 0 !important",
     ".sidebar": "border: none !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important",
-    ".monaco-editor .scroll-decoration": "display: none",
-    ".title-actions": "display: none !important",
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
     ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
     ".title .monaco-icon-label.file-icon": "margin: 0 60px",
-    ".monaco-workbench .quick-input-widget:before": "content:''; position:fixed; inset:0; backdrop-filter: blur(8px); pointer-events:none; z-index:-1;",
-    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, lightpink 10%, hotpink 100%)"
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".title-actions": "display: none !important",
+
+    /* Scrollbars and Focus Outlines */
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important"
   },
-  "editor.multiCursorModifier": "ctrlCmd",
+  "custom-ui-style.external.imports": ["file:///C:/Users/DELL/custom.css"],
+  "custom-ui-style.font.sansSerif": "Dank Mono",
+  "editor.multiCursorModifier": "alt",
   "editor.cursorBlinking": "solid",
+  "explorer.compactFolders": false,
   "editor.cursorStyle": "line",
-  "editor.wordWrap": "off",
   "workbench.colorCustomizations": {
     "editorCursor.background": "#000000",
     "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
@@ -72,26 +88,37 @@
       "terminalCursor.foreground": "#aa00ff",
       "scrollbarSlider.background": "#191521",
       "scrollbarSlider.activeBackground": "#191521",
-      "scrollbarSlider.hoverBackground": "#191521",
+      "scrollbarSlider.hoverBackground": "#191521"
+    },
+    "[Tailwind - Darkest]": {
+      "sideBar.background": "#0D1628"
+    },
+    "[Vue Theme]": {
+      "editor.background": "#10141e",
+      "sideBar.background": "#10141e"
     }
   },
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 14,
-  "editor.fontWeight": "10",
   "editor.fontLigatures": true,
+  "editor.cursorSurroundingLines": 2,
   "editor.lineHeight": 2.4,
-  "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.lineHeight": 2,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.colorDecorators": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": ["comment", "keyword", "entity.name.class", "entity.name.function"],
+        "scope": "comment",
         "settings": {
+          // this is a comment
           "fontStyle": "italic"
         }
       }
     ]
   },
+  "editor.stickyScroll.enabled": false,
+  "editor.codeLens": false,
   "editor.matchBrackets": "never",
   "editor.parameterHints.enabled": false,
   "editor.lightbulb.enabled": "off",
@@ -104,6 +131,7 @@
   "editor.detectIndentation": false,
   "editor.showFoldingControls": "never",
   "editor.guides.indentation": false,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "none",
   "editor.occurrencesHighlight": "off",
@@ -114,10 +142,10 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.snippetSuggestions": "top",
   "emmet.triggerExpansionOnTab": true,
-  "update.mode": "manual",
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.cursorStyle": "line",
   "files.autoSave": "afterDelay",
+  "update.mode": "none",
+  "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -126,17 +154,44 @@
     "php": "php",
     "python": "cls; python -u",
     "go": "go run",
-    "lua": "lua",
+    "lua": "lua"
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "terminal.integrated.tabs.enabled": true,
-  "workbench.statusBar.visible": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": false,
   "vscode-neovim.compositeKeys": {
     "jj": {
-      "command": "vscode-neovim.escape",
+      "command": "vscode-neovim.escape"
     }
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
 
