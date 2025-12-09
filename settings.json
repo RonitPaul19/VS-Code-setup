@@ -1,12 +1,14 @@
 {
-  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.colorTheme": "Bearded Theme Arc Blueberry",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "single",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
+  "editor.lineNumbers": "on",
   "editor.smoothScrolling": true,
   "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "breadcrumbs.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
@@ -24,42 +26,27 @@
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "hidden",
   "custom-ui-style.stylesheet": {
-    /* Notifications and Quick Input */
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
     ".quick-input-widget": "top: 25vh !important",
     ".quick-input-list .scrollbar": "display: none",
     ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .quick-input-widget:before": "content: ''; position: fixed; inset: 0; backdrop-filter: blur(8px); pointer-events: none; z-index: -1;",
-
-    /* Editor Widgets */
     ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-    ".monaco-editor .scroll-decoration": "display: none",
-
-    // for aura dracula theme
-    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, hotpink 10%, lightpink 100%)",
-
-    // For Tailwind theme:
-    // ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #6ec1ff 10%, #2196f3 100%)",
-
-    // For nuxt theme
-    // ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #20d199 10%, #009bff 100%)",
-
-    /* Sidebar and Title Bar */
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
     ".sidebar .title-label": "padding: 0 !important",
     ".sidebar": "border: none !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
-    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
     ".title .monaco-icon-label:after": "margin-right: 0",
-    ".title-actions": "display: none !important",
-
-    /* Scrollbars and Focus Outlines */
-    ".monaco-scrollable-element > .shadow.top": "display: none",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important"
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+    // ".monaco-editor .cursors-layer .cursor": "background: linear-gradient(180deg, hotpink 0%, lightpink 100%) !important"
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #00DC82 10%, #56BCFF 100%)"
   },
   "custom-ui-style.external.imports": ["file:///C:/Users/DELL/custom.css"],
   "custom-ui-style.font.sansSerif": "Dank Mono",
@@ -85,7 +72,7 @@
     "[Aura Dracula Spirit (Soft)]": {
       "editorSuggestWidget.selectedBackground": "#3A334B",
       "sideBar.background": "#191521",
-      "terminalCursor.foreground": "#aa00ff",
+      "terminalCursor.foreground": "#c45dff",
       "scrollbarSlider.background": "#191521",
       "scrollbarSlider.activeBackground": "#191521",
       "scrollbarSlider.hoverBackground": "#191521"
@@ -93,16 +80,18 @@
     "[Tailwind - Darkest]": {
       "sideBar.background": "#0D1628"
     },
-    "[Vue Theme]": {
-      "editor.background": "#10141e",
-      "sideBar.background": "#10141e"
+    "[Bearded Theme Arc Blueberry]": {
+      "sideBar.background": "#111422",
+      "terminal.background": "#111422",
+      "terminalCursor.foreground": "#00dc82",
+      "editor.foldBackground": "#00000000"
     }
   },
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.cursorSurroundingLines": 2,
-  "editor.lineHeight": 2.4,
+  "editor.lineHeight": 2.5,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.smoothScrolling": true,
   "editor.colorDecorators": true,
@@ -126,7 +115,6 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "scm.diffDecorations": "none",
-  "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.showFoldingControls": "never",
@@ -160,38 +148,18 @@
     "asvetliakov.vscode-neovim": 1
   },
   "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.cursorBlinking": false,
   "vscode-neovim.compositeKeys": {
     "jj": {
       "command": "vscode-neovim.escape"
     }
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.minimap.enabled": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
 }
 
