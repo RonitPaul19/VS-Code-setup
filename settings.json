@@ -1,52 +1,49 @@
 {
-  "window.zoomLevel": 2,
+  // APPEARANCE & UI
+  "window.zoomLevel": 1.5,
   "workbench.colorTheme": "Horizon Italic",
-  "workbench.editor.showTabs": "single",
-  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "bearded-icons",
   "workbench.tips.enabled": false,
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
-  "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "workbench.tree.enableStickyScroll": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.indent": 10,
-  "explorer.compactFolders": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "explorer.decorations.badges": false,
-  "git.decorations.enabled": false,
-  "window.customTitleBarVisibility": "never",
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "hidden",
+  "workbench.startupEditor": "none",
 
-  "custom-ui-style.stylesheet": {
-    ".notification-toast": "box-shadow: none !important",
-    // ".title-actions": "display: none !important",
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-    ".quick-input-widget": "top: 25vh !important",
-    ".quick-input-list .scrollbar": "display: none",
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
-    ".quick-input-titlebar": "background: #100B15 !important",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
-    ".monaco-scrollable-element > .shadow.top": "display: none",
-    ".sidebar .title-label": "padding: 0 !important",
-    ".sidebar": "border: none !important",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".monaco-list-row.focused": "outline: none !important",
-    ".monaco-editor .scroll-decoration": "display: none",
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-    ".title .monaco-icon-label:after": "margin-right: 0",
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
-    ".title .monaco-icon-label.file-icon": "margin: 0 60px",
-  },
-  "custom-ui-style.font.sansSerif": "Dank Mono",
-  "editor.multiCursorModifier": "ctrlCmd",
+  // EDITOR
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.stickyScroll.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "workbench.editor.showTabs": "none",
+  "editor.lightbulb.enabled": "off",
+  "editor.renderWhitespace": "none",
+
+  //Typography
+  "editor.fontFamily": "Dank Mono",
+  "editor.tabSize": 2,
+  "editor.lineHeight": 2,
+  "editor.fontSize": 15,
+
+  // EDITOR BEHAVIOR
+  "files.autoSave": "afterDelay",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "solid",
-  "editor.cursorStyle": "line",
+  "editor.cursorSurroundingLines": 3,
+
+  // EDITOR VISUAL CLEANUP
+  "editor.occurrencesHighlight": "off",
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "workbench.sideBar.location": "right",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.statusBar.visible": false,
+  "symbols.hidesExplorerArrows": true,
+
+  // SCROLLBARS
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+
+  //COLORS
   "workbench.colorCustomizations": {
     "editorCursor.background": "#000000",
     "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
@@ -62,53 +59,19 @@
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.infoForeground": "#0000",
     "editorOverviewRuler.border": "#0000",
-    "[Aura Dracula Spirit (Soft)]": {
-      "sideBar.background": "#191521",
-      "editorCursor.foreground": "#ff69b4",
-    },
   },
-  "editor.fontSize": 15,
-  "editor.fontFamily": "Dank Mono",
-  "editor.lineHeight": 2,
-  "editor.cursorSurroundingLines": 2,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "comment",
-        "settings": {
-          "fontStyle": "italic",
-        },
-      },
-    ],
-  },
-  "editor.stickyScroll.enabled": false,
-  "editor.colorDecorators": true,
-  "editor.codeLens": false,
-  "editor.matchBrackets": "never",
-  "editor.parameterHints.enabled": false,
-  "editor.lightbulb.enabled": "off",
-  "editor.hover.enabled": "off",
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "scm.diffDecorations": "none",
-  "editor.lineNumbers": "on",
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "editor.showFoldingControls": "never",
-  "editor.guides.indentation": false,
-  "editor.renderWhitespace": "none",
-  "editor.renderLineHighlight": "none",
-  "editor.occurrencesHighlight": "off",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.overviewRulerBorder": false,
-  "editor.hideCursorInOverviewRuler": true,
-  "files.autoSave": "afterDelay",
-  "update.mode": "none",
-  "extensions.ignoreRecommendations": true,
 
+  // BREADCRUMBS & EXPLORER
+  "breadcrumbs.enabled": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 10,
+  "workbench.tree.enableStickyScroll": false,
+
+  // SMOOTH SCROLLING
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // NEOVIM
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1,
   },
@@ -117,46 +80,9 @@
       "command": "vscode-neovim.escape",
     },
   },
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "editor.smoothScrolling": true,
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "code-runner.runInTerminal": true,
-
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cls; cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cls; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "php": "php",
-    "python": "cls; python -u",
-    "go": "go run",
-    "lua": "lua",
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "jupyter.interactiveWindow.textEditor.executeSelection": true,
-  "workbench.statusBar.visible": false,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "chat.viewSessions.orientation": "stacked",
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "workbench.browser.showInTitleBar": true,
+  "chat.disableAIFeatures": true,
 }
 
