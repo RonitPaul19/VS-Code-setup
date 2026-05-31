@@ -27,6 +27,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "solid",
   "editor.cursorSurroundingLines": 3,
+  "editor.multiCursorModifier": "ctrlCmd",
 
   // EDITOR VISUAL CLEANUP
   "editor.occurrencesHighlight": "off",
@@ -38,6 +39,12 @@
   "material-icon-theme.hidesExplorerArrows": true,
   "workbench.statusBar.visible": false,
   "symbols.hidesExplorerArrows": true,
+  "window.customMenuBarAltFocus": false,
+  "window.menuBarVisibility": "hidden",
+  "window.commandCenter": false,
+  "workbench.browser.showInTitleBar": true,
+  "chat.disableAIFeatures": true,
+  "editor.renderLineHighlight": "none",
 
   // SCROLLBARS
   "editor.scrollbar.horizontal": "hidden",
@@ -80,9 +87,8 @@
       "command": "vscode-neovim.escape",
     },
   },
-  "window.menuBarVisibility": "toggle",
-  "window.commandCenter": false,
-  "workbench.browser.showInTitleBar": true,
-  "chat.disableAIFeatures": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+  },
 }
 
