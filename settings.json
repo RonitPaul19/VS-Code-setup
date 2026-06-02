@@ -1,11 +1,11 @@
 {
   "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-  "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
   "breadcrumbs.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
@@ -21,7 +21,13 @@
   "git.decorations.enabled": false,
   "window.zoomLevel": 3,
   "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
+  "window.menuBarVisibility": "hidden",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "window.customMenuBarAltFocus": false,
+
   "custom-ui-style.stylesheet": {
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
@@ -64,6 +70,8 @@
       "sideBar.background": "#191521",
       "titleBar.activeBackground": "#191521",
       "titleBar.border": "#191521",
+      "activityBar.border": "#191521",
+      "editorCursor.foreground": "#BD9DFF"
     },
   },
 
@@ -71,7 +79,7 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 2.5,
-  "editor.cursorSurroundingLines": 1,
+  "editor.cursorSurroundingLines": 2,
 
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -93,6 +101,7 @@
   "files.insertFinalNewline": true,
   "scm.diffDecorations": "none",
   "editor.lineNumbers": "relative",
+  "editor.colorDecorators": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.showFoldingControls": "never",
@@ -123,9 +132,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
 
