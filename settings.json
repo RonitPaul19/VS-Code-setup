@@ -1,11 +1,11 @@
 {
   "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
   "workbench.editor.showTabs": "none",
+  "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "editor.minimap.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "breadcrumbs.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
@@ -38,7 +38,6 @@
     ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
     ".monaco-scrollable-element > .shadow.top": "display: none",
     ".sidebar .title-label": "padding: 0 !important",
-    ".sidebar": "border: none !important",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
     ".monaco-list-row.focused": "outline: none !important",
     ".monaco-editor .scroll-decoration": "display: none",
@@ -68,6 +67,7 @@
     "[Aura Dracula Spirit (Soft)]": {
       "editorSuggestWidget.selectedBackground": "#3A334B",
       "sideBar.background": "#191521",
+      "sideBar.border": "#191521",
       "titleBar.activeBackground": "#191521",
       "titleBar.border": "#191521",
       "activityBar.border": "#191521",
@@ -119,6 +119,7 @@
   "extensions.ignoreRecommendations": true,
 
   // code runner
+  "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "javascript": "node",
     "c": "cls; cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -135,5 +136,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "chat.disableAIFeatures": true,
 }
 
