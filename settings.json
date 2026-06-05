@@ -23,6 +23,7 @@
   "window.commandCenter": false,
   "window.menuBarVisibility": "hidden",
   "editor.smoothScrolling": true,
+  "editor.cursorSurroundingLines": 1,
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
@@ -79,7 +80,6 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 2.5,
-  "editor.cursorSurroundingLines": 2,
 
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -137,5 +137,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.disableAIFeatures": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
 
