@@ -1,16 +1,16 @@
 {
   "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-  "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "none",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "hidden",
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.hidesExplorerArrows": true,
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.indent": 10,
@@ -21,14 +21,6 @@
   "git.decorations.enabled": false,
   "window.zoomLevel": 3,
   "window.commandCenter": false,
-  "window.menuBarVisibility": "hidden",
-  "editor.smoothScrolling": true,
-  "editor.cursorSurroundingLines": 1,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true,
-  "window.customMenuBarAltFocus": false,
-
   "custom-ui-style.stylesheet": {
     ".notification-toast": "box-shadow: none !important",
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
@@ -42,14 +34,17 @@
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
     ".monaco-list-row.focused": "outline: none !important",
     ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
     ".title .monaco-icon-label:after": "margin-right: 0",
     ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
     ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)",
   },
   "custom-ui-style.font.sansSerif": "Dank Mono",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
   "workbench.colorCustomizations": {
     "editorCursor.background": "#000000",
     "editorOverviewRuler.wordHighlightStrongForeground": "#0000",
@@ -69,18 +64,15 @@
       "editorSuggestWidget.selectedBackground": "#3A334B",
       "sideBar.background": "#191521",
       "sideBar.border": "#191521",
-      "titleBar.activeBackground": "#191521",
       "titleBar.border": "#191521",
-      "activityBar.border": "#191521",
-      "editorCursor.foreground": "#BD9DFF"
+      "titleBar.activeBackground": "#191521",
+      "titleBar.inactiveBackground": "#191521",
     },
   },
-
   "editor.fontFamily": "Dank Mono",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.lineHeight": 2.5,
-
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -101,7 +93,6 @@
   "files.insertFinalNewline": true,
   "scm.diffDecorations": "none",
   "editor.lineNumbers": "relative",
-  "editor.colorDecorators": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.showFoldingControls": "never",
@@ -116,27 +107,35 @@
   "editor.snippetSuggestions": "top",
   "files.autoSave": "afterDelay",
   "update.mode": "none",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
   "extensions.ignoreRecommendations": true,
 
-  // code runner
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "c": "cls; cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cls; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "python": "cls; python -u",
-  },
-
+  // vs code neovim extension affinity
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1,
   },
+
+  // code runner extension settings
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "javascript": "cls; node",
+    "c": "cls; cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cls; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "cls; python -u",
+    "typescript": "cls; ts-node",
+    "rust": "cls; cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+  },
+
+  // prettier
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "chat.disableAIFeatures": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
