@@ -1,0 +1,61 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+x",
+    "command": "workbench.view.extensions",
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.zoomReset",
+  },
+  {
+    "key": "escape",
+    "command": "notifications.hideToasts",
+    "when": "notificationToastVisible",
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.showContextMenu",
+  },
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly",
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly",
+  },
+  {
+    "key": "ctrl+m ctrl+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled",
+  },
+  {
+    "key": "ctrl+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled",
+  },
+  {
+    "key": "ctrl+alt+[",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled",
+  },
+  {
+    "key": "ctrl+alt+]",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled",
+  },
+]
+
