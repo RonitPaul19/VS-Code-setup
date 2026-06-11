@@ -150,6 +150,11 @@
       "before": ["leader", "w", "a"],
       "commands": ["workbench.action.evenEditorWidths"],
     },
+
+    {
+      "before": ["leader", "r"],
+      "commands": ["code-runner.run"],
+    }
   ],
 
   // ── Visual mode keybindings ───────────────────────
@@ -167,7 +172,7 @@
   },
 
   // ──VS Code Settings ────────────────────────────────
-  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.colorTheme": "Rosé Pine",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.statusBar.visible": false,
