@@ -167,6 +167,8 @@
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
   // Code runner
   "code-runner.runInTerminal": true,
@@ -176,5 +178,5 @@
     "cpp": "cls; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "python": "cls; python -u",
     "typescript": "cls; ts-node"
-  }
+  },
 }
