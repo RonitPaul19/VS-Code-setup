@@ -18,7 +18,7 @@
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "git.decorations.enabled": false,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 3,
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "hidden",
@@ -42,7 +42,7 @@
     "editorOverviewRuler.border": "#0000",
 
     "[Aura Dracula Spirit (Soft)]": {
-      "editorCursor.foreground": "#fa6b94",
+      "editorCursor.foreground": "#DA70D6",
       "sideBar.background": "#191521",
       "sideBar.border":"#191521",
     },
@@ -51,8 +51,8 @@
   "editor.fontFamily": "DankMono Nerd Font",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 1.5,
-  "editor.cursorSurroundingLines": 5,
+  "editor.lineHeight": 1.95,
+  "editor.cursorSurroundingLines": 3,
 
   "editor.tokenColorCustomizations": {
     "textMateRules": [
