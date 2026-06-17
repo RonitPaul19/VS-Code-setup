@@ -1,6 +1,7 @@
 {
   "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
   "workbench.productIconTheme": "material-product-icons",
+  "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
