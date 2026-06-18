@@ -19,7 +19,7 @@
   "explorer.confirmDelete": false,
   "explorer.decorations.badges": false,
   "git.decorations.enabled": false,
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "hidden",
@@ -51,9 +51,9 @@
 
   "editor.fontFamily": "DankMono Nerd Font",
   "editor.fontSize": 15,
+  "editor.lineHeight": 1.5,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 1.95,
-  "editor.cursorSurroundingLines": 3,
+  "editor.cursorSurroundingLines": 5,
 
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -108,6 +108,10 @@
     "cpp": "cls; cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "python": "cls; python -u",
     "typescript": "cls; ts-node",
-  }
+  },
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on"
 }
 
